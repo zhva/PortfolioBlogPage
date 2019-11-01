@@ -1,0 +1,13 @@
+<svg width="32mm" height="32mm" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(1.64 .214)">
+  <g transform="translate(-2.7 -1.14)">
+   <g transform="matrix(.258 0 0 .286 1.06 -.792)">
+    <g fill="#939ea2">
+     <path class="hovered-path active-path" d="m112 6h-100c-6.6 0-12 5.4-12 12s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12z" data-old_color="#000000" data-original="#000000"/>
+     <path class="hovered-path active-path" d="m112 50h-100c-6.6 0-12 5.4-12 12s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12z" data-old_color="#000000" data-original="#000000"/>
+     <path class="hovered-path active-path" d="m112 94h-100c-6.6 0-12 5.4-12 12s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12z" data-old_color="#000000" data-original="#000000"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

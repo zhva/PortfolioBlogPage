@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Personal Blog</title>
+</head>
+<body>
+  <header class="header-section">
+    <div class="layout header">
+      <nav class="navigation">
+        <img src="img/menu-button.svg" class="menu-icon-open" alt="menu" onclick="openMenu('sideMenuId')">
+        <div class="menu" id="sideMenuId">
+          <ul>
+            <svg class="menu-icon-close" onclick="closeMenu('sideMenuId')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+              <g transform="matrix(0.112937 0 0 0.112937 4.06797 6.53341)"><g>
+                <path d="M336.559,68.611L231.016,174.165l105.543,105.549c15.699,15.705,15.699,41.145,0,56.85   c-7.844,7.844-18.128,11.769-28.407,11.769c-10.296,0-20.581-3.919-28.419-11.769L174.167,231.003L68.609,336.563   c-7.843,7.844-18.128,11.769-28.416,11.769c-10.285,0-20.563-3.919-28.413-11.769c-15.699-15.698-15.699-41.139,0-56.85   l105.54-105.549L11.774,68.611c-15.699-15.699-15.699-41.145,0-56.844c15.696-15.687,41.127-15.687,56.829,0l105.563,105.554   L279.721,11.767c15.705-15.687,41.139-15.687,56.832,0C352.258,27.466,352.258,52.912,336.559,68.611z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#939EA2"/>
+              </g></g>
+            </svg>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Storys</a></li>
+            <li><a href="#">Quote</a></li>
+            </ul>
+        </div>
+      </nav>
+      <div class="logo">Marcy..</div>
+    </div>
+  </header>
+  <main class="body-section">
+    <article>
+      <section class="travel-section">
+        <div class="layout">
+          <div class="travel-content">
+            <h1 class="section-theme">Travel</h1>
+            <h2 class="section-header">Nullam id dolor id nibh ultricies vehicula ut id elit.</h2>
+            <p class="section-text">Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. 
+                                    Et liam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+            <p class="section-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem 
+                                    malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.</p>
+            <button class="button-style">Full story</button>
+          </div>
+          <div class="gallery-wrapper border-shadow" id="travelGalleryId" onload ="fadeInOutGallery('travelGalleryId', 'gallery-fade')">
+            <img class="gallery-fade" src="img/gallery/gallery_1.jpg" alt="img1">
+            <img class="gallery-fade" src="img/gallery/gallery_2.jpg" alt="img2">
+            <img class="gallery-fade" src="img/gallery/gallery_3.jpg" alt="img3">
+            <img class="gallery-fade" src="img/gallery/gallery_4.jpg" alt="img4">
+            <img class="gallery-fade" src="img/gallery/gallery_5.jpg" alt="img5">
+            <img class="gallery-fade" src="img/gallery/gallery_6.jpg" alt="img6">
+            <img class="gallery-fade" src="img/gallery/gallery_7.jpg" alt="img7">
+            <img class="gallery-fade" src="img/gallery/gallery_8.jpg" alt="img8">
+            <img class="gallery-fade" src="img/gallery/gallery_9.jpg" alt="img9">
+            <img class="gallery-fade" src="img/gallery/gallery_10.jpg" alt="img10">
+          </div>
+        </div>
+      </section>
+      <section class="storys-section">
+        <div class="layout">
+          <div class="storys-content">
+            <h1 class="section-theme centring">Storys</h1>
+            <h2 class="section-header centring">Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</h2>
+            <img class="storys-image centring border-shadow" src="img/story-img1.jpg" alt="story image">
+            <p class="section-text">Donec aredsed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum 
+                                    at eros. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p class="section-text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam 
+                                    venenatis vestibulum. </p>
+            <button class="button-style">Full story</button>
+          </div>
+        </div>
+        <div class="storys-video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WlP5JDhV8u8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="quote-section">
+        <div class="layout">
+          <div class="quote-content">
+            <div class="gallery-wrapper border-shadow" id="quoteGalleryId" onload ="fadeInOutGallery('quoteGalleryId', 'gallery-fade')">
+              <img class="gallery-fade" src="img/gallery/gallery_10.jpg" alt="img1">
+              <img class="gallery-fade" src="img/gallery/gallery_9.jpg" alt="img2">
+              <img class="gallery-fade" src="img/gallery/gallery_8.jpg" alt="img3">
+              <img class="gallery-fade" src="img/gallery/gallery_7.jpg" alt="img4">
+              <img class="gallery-fade" src="img/gallery/gallery_6.jpg" alt="img5">
+              <img class="gallery-fade" src="img/gallery/gallery_5.jpg" alt="img6">
+              <img class="gallery-fade" src="img/gallery/gallery_4.jpg" alt="img7">
+              <img class="gallery-fade" src="img/gallery/gallery_3.jpg" alt="img8">
+              <img class="gallery-fade" src="img/gallery/gallery_2.jpg" alt="img9">
+              <img class="gallery-fade" src="img/gallery/gallery_1.jpg" alt="img10">
+            </div>
+            <div class="quote-heading">
+              <h1 class="section-theme">Quote</h1>
+              <h2 class="section-header">Nullam id dolor id nibh ultricies vehicula elit.</h2>
+            </div>
+            <div class="quotation border-shadow">
+              <p class="quote-text">“Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor”</p>
+              <div class="qoute-autor"><p>Ven Diesel</p><p> 1962-2006</p></div>
+              <button class="button-style">Full story</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="footer-section">
+    <div class="footer-content">
+      <form action="" method="post">
+        <p>Like what you're reading? Get weekly updates that will help you grow as a designer.</p>
+        <div class="subscribtion-data">
+          <input type="text" name="Name" id="nameId" placeholder="Name" onfocus="this.placeholder=''" onblur="this.placeholder='Name'">
+          <input type="email" name="E-Mail" id="emailId" placeholder="E-Mail" onfocus="this.placeholder=''" onblur="this.placeholder='E-Mail'">
+        </div>
+        <button class="button-style">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+  <script src="js/gallery.js"></script>
+  <script src="js/sideMenu.js"></script>
+</body>
+</html>
