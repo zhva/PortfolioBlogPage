@@ -1,6 +1,3 @@
-# PortfolioBlogPage
-## Introduction
-This repository contains an example blog web-page with responsive design and semantic elements for my portfolio
+# Blog Webpage
 
-## Technologies
-HTML, CSS, Javascript
+This repository contains an example of a blog web-page with responsive design and semantic elements for my portfolio
