@@ -79,35 +79,76 @@ body {
 
 .menu-wrapper {
   height: 100%;
-  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   overflow-x: hidden;
+  margin-left: -9%;
   transition: all 0.5s ease-in-out;
   background-color: rgba(255, 255, 255, 1);
-  -webkit-box-shadow: 140px 0px 135px 5px rgba(0,0,0,0.48);
-  -moz-box-shadow: 140px 0px 135px 5px rgba(0,0,0,0.48);
-  box-shadow: 140px 0px 135px 5px rgba(0,0,0,0.48);
+  -webkit-box-shadow: 140px 0px 100px 5px rgba(0,0,0,0.48);
+  -moz-box-shadow: 140px 0px 100px 5px rgba(0,0,0,0.48);
+  box-shadow: 140px 0px 100px 5px rgba(0,0,0,0.48);
+}
+
+.menu-open {
+  width: 25%;
+  padding-left: 9%;
+}
+.menu-close {
+  width: 0;
+  padding-left: 0;
 }
 .menu-wrapper  .menu-icon-close {
   width: 30px;
   cursor: pointer;
+  margin-top: 47px;
+  margin-bottom: 15px;
 }
-.side-menu {
-  transform: translateY(10%);
-}
+
 .side-menu > li > a {
   text-decoration: none;
+  position: relative;
   padding: 10px;
   display: block;
   font-size: 25px;
   overflow: hidden;
+  margin-bottom: -1px;
   text-overflow: ellipsis;
   white-space: nowrap;
   color: rgba(128, 173, 189, 1);
   border-top: 1px solid rgba(128, 173, 189, 1);
   border-bottom: 1px solid rgba(128, 173, 189, 1);
+}
+.side-menu > li:last-child > a {
+  margin-bottom: 0px;
+}
+.triangle-up::after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 50%;
+  left: 90%;
+  transform: translate(-90%, -50%);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 10px solid rgba(147, 158, 162, 1);
+}
+.triangle-down::after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 50%;
+  left: 90%;
+  transform: translate(-90%, -50%);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 10px solid rgba(147, 158, 162, 1);
+}
+.side-menu li {
+  overflow: hidden;
 }
 .side-menu li,
 .sub-menu li {
@@ -115,6 +156,12 @@ body {
 }
 .sub-menu {
   margin-left: 5%;
+  height: 155px;
+  transition: all 0.5s ease-in-out;
+}
+.sub-menu-hidden {
+  overflow: hidden;
+  height: 0px;
 }
 .sub-menu li {
   padding: 5px 0;
@@ -359,6 +406,9 @@ body {
     height: 80px;
     font-size: 40px;
     line-height: 65px;
+  }
+  .menu-wrapper .menu-icon-close {
+    margin-top: 70px;
   }
   .section-theme {
     font-size: 15px;
