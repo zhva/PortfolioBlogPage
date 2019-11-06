@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <title>Personal Blog</title>
 </head>
-<body>
+<body onload ="fadeInOutGallery('travelGalleryId', 'gallery-fade'), fadeInOutGallery('quoteGalleryId', 'gallery-fade')">
   <header class="header-section">
     <div class="layout header">
       <nav class="navigation">
@@ -65,17 +65,19 @@
                                     malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.</p>
             <button class="button-style">Full story</button>
           </div>
-          <div class="gallery-wrapper border-shadow" id="travelGalleryId" onload ="fadeInOutGallery('travelGalleryId', 'gallery-fade')">
-            <img class="gallery-fade" src="img/gallery/gallery_1.jpg" alt="img1">
-            <img class="gallery-fade" src="img/gallery/gallery_2.jpg" alt="img2">
-            <img class="gallery-fade" src="img/gallery/gallery_3.jpg" alt="img3">
-            <img class="gallery-fade" src="img/gallery/gallery_4.jpg" alt="img4">
-            <img class="gallery-fade" src="img/gallery/gallery_5.jpg" alt="img5">
-            <img class="gallery-fade" src="img/gallery/gallery_6.jpg" alt="img6">
-            <img class="gallery-fade" src="img/gallery/gallery_7.jpg" alt="img7">
-            <img class="gallery-fade" src="img/gallery/gallery_8.jpg" alt="img8">
-            <img class="gallery-fade" src="img/gallery/gallery_9.jpg" alt="img9">
-            <img class="gallery-fade" src="img/gallery/gallery_10.jpg" alt="img10">
+          <div class="gallery-wrapper border-shadow">
+            <div id="travelGalleryId">
+              <img class="gallery-fade" src="img/gallery/gallery_1.jpg" alt="img1">
+              <img class="gallery-fade" src="img/gallery/gallery_2.jpg" alt="img2">
+              <img class="gallery-fade" src="img/gallery/gallery_3.jpg" alt="img3">
+              <img class="gallery-fade" src="img/gallery/gallery_4.jpg" alt="img4">
+              <img class="gallery-fade" src="img/gallery/gallery_5.jpg" alt="img5">
+              <img class="gallery-fade" src="img/gallery/gallery_6.jpg" alt="img6">
+              <img class="gallery-fade" src="img/gallery/gallery_7.jpg" alt="img7">
+              <img class="gallery-fade" src="img/gallery/gallery_8.jpg" alt="img8">
+              <img class="gallery-fade" src="img/gallery/gallery_9.jpg" alt="img9">
+              <img class="gallery-fade" src="img/gallery/gallery_10.jpg" alt="img10">
+            </div>
           </div>
         </div>
       </section>
@@ -99,17 +101,19 @@
       <section class="quote-section">
         <div class="layout">
           <div class="quote-content">
-            <div class="gallery-wrapper border-shadow" id="quoteGalleryId" onload ="fadeInOutGallery('quoteGalleryId', 'gallery-fade')">
-              <img class="gallery-fade" src="img/gallery/gallery_10.jpg" alt="img1">
-              <img class="gallery-fade" src="img/gallery/gallery_9.jpg" alt="img2">
-              <img class="gallery-fade" src="img/gallery/gallery_8.jpg" alt="img3">
-              <img class="gallery-fade" src="img/gallery/gallery_7.jpg" alt="img4">
-              <img class="gallery-fade" src="img/gallery/gallery_6.jpg" alt="img5">
-              <img class="gallery-fade" src="img/gallery/gallery_5.jpg" alt="img6">
-              <img class="gallery-fade" src="img/gallery/gallery_4.jpg" alt="img7">
-              <img class="gallery-fade" src="img/gallery/gallery_3.jpg" alt="img8">
-              <img class="gallery-fade" src="img/gallery/gallery_2.jpg" alt="img9">
-              <img class="gallery-fade" src="img/gallery/gallery_1.jpg" alt="img10">
+            <div class="gallery-wrapper border-shadow">
+              <div id="quoteGalleryId">
+                <img class="gallery-fade" src="img/gallery/gallery_10.jpg" alt="img1">
+                <img class="gallery-fade" src="img/gallery/gallery_9.jpg" alt="img2">
+                <img class="gallery-fade" src="img/gallery/gallery_8.jpg" alt="img3">
+                <img class="gallery-fade" src="img/gallery/gallery_7.jpg" alt="img4">
+                <img class="gallery-fade" src="img/gallery/gallery_6.jpg" alt="img5">
+                <img class="gallery-fade" src="img/gallery/gallery_5.jpg" alt="img6">
+                <img class="gallery-fade" src="img/gallery/gallery_4.jpg" alt="img7">
+                <img class="gallery-fade" src="img/gallery/gallery_3.jpg" alt="img8">
+                <img class="gallery-fade" src="img/gallery/gallery_2.jpg" alt="img9">
+                <img class="gallery-fade" src="img/gallery/gallery_1.jpg" alt="img10">
+              </div>
             </div>
             <div class="quote-heading">
               <h1 class="section-theme">Quote</h1>
