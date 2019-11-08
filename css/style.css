@@ -253,6 +253,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 30px;
+  outline: none;
 }
 .button-style::after {
   content: '\2192';
